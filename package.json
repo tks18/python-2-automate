@@ -1,0 +1,56 @@
+{
+  "name": "python-2-automate",
+  "version": "0.0.1",
+  "description": "A Python GUI Based Shortcut Handler for Automations",
+  "main": "main.py",
+  "scripts": {
+    "prepare": "husky",
+    "git:stage": "git add",
+    "git:commit": "cz",
+    "git:push": "git push --follow-tags origin dev",
+    "release:pre": "standard-version --prerelease --sign",
+    "release:patch": "standard-version --release-as patch --sign",
+    "release:minor": "standard-version --release-as minor --sign",
+    "release:major": "standard-version --release-as major --sign",
+    "build": "python build.py",
+    "start": "python main.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tks18/python-2-automate.git"
+  },
+  "keywords": [
+    "Nodejs",
+    "Node",
+    "Python",
+    "Tkinter",
+    "Excel",
+    "Automations",
+    "GUI",
+    "Shortcut"
+  ],
+  "author": {
+    "email": "tksudharshan@gmail.com",
+    "name": "Sudharshan TK",
+    "url": "https://github.com/tks18"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/tks18/python-2-automate/issues"
+  },
+  "homepage": "https://github.com/tks18/python-2-automate#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^9.1.7",
+    "standard-version": "^9.5.0"
+  },
+  "packageManager": "yarn@4.6.0",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
