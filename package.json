@@ -1,6 +1,6 @@
 {
   "name": "python-2-automate",
-  "version": "0.0.2-0",
+  "version": "0.0.2-1",
   "description": "A Python GUI Based Shortcut Handler for Automations",
   "main": "main.py",
   "scripts": {
