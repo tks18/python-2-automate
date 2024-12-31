@@ -1,6 +1,6 @@
 {
   "name": "python-2-automate",
-  "version": "0.0.1",
+  "version": "0.0.2-0",
   "description": "A Python GUI Based Shortcut Handler for Automations",
   "main": "main.py",
   "scripts": {
@@ -8,10 +8,10 @@
     "git:stage": "git add",
     "git:commit": "cz",
     "git:push": "git push --follow-tags origin dev",
-    "release:pre": "standard-version --prerelease --sign",
-    "release:patch": "standard-version --release-as patch --sign",
-    "release:minor": "standard-version --release-as minor --sign",
-    "release:major": "standard-version --release-as major --sign",
+    "release:pre": "standard-version --prerelease",
+    "release:patch": "standard-version --release-as patch",
+    "release:minor": "standard-version --release-as minor",
+    "release:major": "standard-version --release-as major",
     "build": "python build.py",
     "start": "python main.py"
   },
